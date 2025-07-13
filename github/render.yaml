@@ -1,0 +1,9 @@
+
+services:
+  - type: web
+    name: grantsmfb-remita-webhook
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    autoDeploy: true
